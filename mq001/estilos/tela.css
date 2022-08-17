@@ -20,17 +20,25 @@ header > h1 {
 
 menu ul {
     list-style-type: none;
-    background-color: lightslategray;
+   
     align-items: center;
+    margin-left: 150px;
 }
 menu li{
     background-color: blueviolet;
     color: white;
     display: inline-block;
     padding: 10px;
+    margin: 10px;
     border-radius: 5px;
-    
 }
+
+li:hover {
+   background-color: aquamarine;
+   color: black;
+    }
+
+
 article{
     width: 600px;
     display: block;
