@@ -20,7 +20,6 @@ header > h1 {
 
 menu ul {
     list-style-type: none;
-   
     align-items: center;
     margin-left: 150px;
 }
@@ -34,7 +33,7 @@ menu li{
 }
 
 li:hover {
-   background-color: aquamarine;
+   background-color: rgb(171, 237, 214);
    color: black;
     }
 

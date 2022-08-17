@@ -20,5 +20,5 @@ article{
 }
 
 article::after {
-    content: 'Este artigo foi impresso por @Nelson Andrade';
+    content: 'Este artigo foi produzido por @Nelson Andrade';
 }
