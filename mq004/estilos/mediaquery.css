@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*Todas as outras medias queries*/
+
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenos ecrãs: até 600px
+Telemovél: de 600px até 768px
+Tablet: 768px até 992px
+Desktop/Pc: 992px até 1200px
+Grandes ecrãs: acima de 1200px
+Informaçoes retiradas do W3 scholl
+*/
+
+@media print {
+    body{
+        background-image: url(../imagens/back-print.jpg);/* desnecessário pois não imprime fundo*/
+        font-family: 'Courier New', Courier, monospace;
+       
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    h1::after{
+        content: " \A Imprimir";
+        color: black;
+        white-space: pre-wrap;
+    }
+    p{
+        display: block;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {/*tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    h1::after{
+        content: " \A Tablet";
+        color: rgb(14, 225, 11);
+        white-space: pre-wrap;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {/*desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    h1::after{
+        content: " \A Computador";
+        color: rgb(0, 255, 234);
+        white-space: pre-wrap;
+    }
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: block;}
+        img#tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) {/*grandes ecrãs*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    h1::after{/*neste exemplo temos como quebrar a linha e adcionar texto quando muda de tamanho de ecrã*/
+        content: " \A Televisão";
+        color: blue;
+        white-space: pre-wrap;
+    }
+
+        img#phone{display: none;}
+        img#tablet{display: none;}
+        img#print{display: none;}
+        img#pc{display: none;}
+        img#tv{display: block;}
+    
+}
