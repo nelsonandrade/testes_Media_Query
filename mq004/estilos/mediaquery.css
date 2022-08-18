@@ -26,6 +26,7 @@ Informaçoes retiradas do W3 scholl
     }
 
     main{
+        width: 90vw;
         border: 2px solid black;
     }
 
